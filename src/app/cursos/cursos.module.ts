@@ -45,6 +45,8 @@ import {RouterModule} from "@angular/router";
     CursosComponent,
     CursoDetalheComponent,
     CursoNaoEncontradoComponent
+
+
   ],
   providers: [
     CursosService
