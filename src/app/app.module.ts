@@ -34,6 +34,7 @@ import {AlunosModule} from "./alunos/alunos.module";
     BrowserModule,
     AppRoutingModule,
 
+
   ],
   providers: [
 
