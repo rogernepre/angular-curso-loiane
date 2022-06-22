@@ -6,6 +6,7 @@ import {AlunosComponent} from "./alunos.component";
 import {AlunosDetalheComponent} from "./alunos-detalhe/alunos-detalhe.component";
 import {AlunosFormComponent} from "./alunos-form/alunos-form.component";
 import {AlunosRoutingModule} from "./alunos.routing.module";
+import {AlunosService} from "./alunos.service";
 
 @NgModule({
   imports: [
@@ -13,19 +14,18 @@ import {AlunosRoutingModule} from "./alunos.routing.module";
     CommonModule,
     FormsModule,
     RouterModule
-    ],
-  exports: [
-
   ],
-  declarations:[
+  exports: [],
+  declarations: [
     AlunosComponent,
     AlunosDetalheComponent,
     AlunosFormComponent
   ],
   providers: [
-
+    AlunosService
   ]
 
 })
 // @ts-ignore
-export class AlunosModule{}
+export class AlunosModule {
+}
