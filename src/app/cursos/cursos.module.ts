@@ -33,12 +33,15 @@ import {CursoNaoEncontradoComponent} from "./curso-nao-encontrado/curso-nao-enco
 import {CursosService} from "./cursos.service";
 import {FormsModule} from "@angular/forms";
 import {RouterModule} from "@angular/router";
+import {CursosRoutingModule} from "./cursos.routing.module";
 
 @NgModule({
   imports: [
+    RouterModule,
+    CursosRoutingModule,
     CommonModule,
     FormsModule,
-    RouterModule
+
   ],
   exports: [],
   declarations: [
