@@ -8,12 +8,15 @@ import {CursoDetalheComponent} from "./cursos/curso-detalhe/curso-detalhe.compon
 import {CursoNaoEncontradoComponent} from "./cursos/curso-nao-encontrado/curso-nao-encontrado.component";
 import {AlunosComponent} from "./alunos/alunos.component";
 
+
 const routes: Routes = [
-  {path: 'alunos', component: AlunosComponent},
-  {path: 'cursos', component: CursosComponent},
-  {path: 'curso/:id', component: CursoDetalheComponent},
+  {path: 'cursos', loadChildren: () => import('./cursos/cursos.module').then(m =>
+    m.CursosModule) },
+
+  //{path: 'alunos', component: AlunosComponent},
+
   {path: 'login', component: LoginComponent},
-  {path: 'cursoNaoEncontrado', component: CursoNaoEncontradoComponent},
+
   {path: '', component: HomeComponent}
   ]
 @NgModule({
